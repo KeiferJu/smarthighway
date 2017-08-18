@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>救援状态查询</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="status-info">
+    <div class="status-info-body">
+      <ion-grid>
+        <ion-row>
+          <ion-col style="font-size: 16px;font-weight: bold">状态</ion-col>
+          <ion-col style="font-size: 16px;font-weight: bold">姓名</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>{{status}}</ion-col>
+          <ion-col>{{info.u_name}}</ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+
+
+  <div>
+    <button ion-button class="call" (click)="call()">拨打紧急电话</button>
+  </div>
+
+
+  <div class="list">
+    <ion-list>
+      <h2 class="list-info">车主信息</h2>
+
+      <table class="list-tb">
+        <tr>
+          <td class="list-tb-t">车牌号:</td>
+
+          <td class="list-tb-b">{{info.target_name}}</td>
+        </tr>
+        <tr>
+          <td class="list-tb-t">联系电话:</td>
+
+          <td class="list-tb-b">{{info.u_phone}}</td>
+        </tr>
+        <tr>
+          <td class="list-tb-t">救援类型:</td>
+
+          <td class="list-tb-b">{{type}}</td>
+        </tr>
+        <tr>
+          <td class="list-tb-t">情况信息:</td>
+
+          <td class="list-tb-b">{{info.memo}}</td>
+        </tr>
+        <tr>
+          <td class="list-tb-t">现场图片:</td>
+
+          <td class="list-img-p" *ngFor="let l of info.concat.imgUrl">
+            <img src={{l.url}}>
+          </td>
+        </tr>
+
+      </table>
+    </ion-list>
+  </div>
+</ion-content>

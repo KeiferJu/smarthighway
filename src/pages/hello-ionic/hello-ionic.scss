@@ -1,0 +1,30 @@
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
+  right: 5px;
+  bottom: 10px;
+  left: auto;
+  width: auto;
+}
+.banner-title{
+  bottom: 10px;
+  position: absolute;
+  left: 10px;
+  color: #fff;
+}
+.grid{
+  padding: 0px;
+}
+ion-col{
+  //border: 1px solid #c8c7cc;
+  padding: 2px;
+
+}
+.col{
+  padding: 15px 25px;
+}
+ion-row{
+  text-align: center;
+}
+
+ion-app.md [padding], ion-app.md [padding] .scroll-content {
+    padding: 2px 5px 5px 5px;
+}

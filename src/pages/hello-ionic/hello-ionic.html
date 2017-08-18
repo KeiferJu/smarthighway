@@ -1,0 +1,79 @@
+<ion-header style="text-align: center;">
+  <ion-navbar>
+    <!-- <button ion-button menuToggle>
+       <ion-icon ></ion-icon>
+    </button> -->
+    <ion-title>华北高速</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <!--// banner图-->
+  <ion-slides pager style="width: auto;height: auto">
+    <ion-slide >
+      <img src="./assets/banner/1.png">
+      <span class="banner-title">华北高速</span>
+    </ion-slide>
+    <ion-slide>
+      <img src="./assets/banner/banner2.jpg">
+      <span class="banner-title">道路救援系统</span>
+    </ion-slide>
+    <ion-slide>
+      <img src="./assets/banner/banner3.jpg">
+      <span class="banner-title">实时救援</span>
+    </ion-slide>
+  </ion-slides>
+
+  <!--// 九宫格-->
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <img src="./assets/icon/icon_1.png"/>
+        <span>导航服务</span>
+      </ion-col>
+      <ion-col>
+        <img src="./assets/icon/icon_2.png"/>
+        <span>车友爆料</span>
+      </ion-col>
+      <ion-col (click)="itemTapped($event, '道路救援')">
+        <img src="./assets/icon/icon_3.png"/>
+        <span>事故救援</span>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <img src="./assets/icon/icon_4.png"/>
+        <span>资讯服务</span>
+      </ion-col>
+      <ion-col>
+        <img src="./assets/icon/icon_5.png"/>
+        <span>违章查询</span>
+      </ion-col>
+      <ion-col>
+        <img src="./assets/icon/icon_6.png"/>
+        <span>ADAS服务</span>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <img src="./assets/icon/icon_7.png"/>
+        <span>路费计算</span>
+      </ion-col>
+      <ion-col>
+        <img src="./assets/icon/icon_8.png"/>
+        <span>个人中心</span>
+      </ion-col>
+      <ion-col>
+        <img src="./assets/icon/icon_9.png"/>
+        <span>周边服务</span>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+  <!-- <p>
+    <button ion-button color="primary" menuToggle>Toggle Menu</button>
+  </p> -->
+
+</ion-content>
